@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page with Background Image Example</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="digest">
+    {% if enc %}
+    <p>Data Leak:{{enc}}</p>
+    <form action="/home" method="post">
+        <input type="text" placeholder="Secret hex" required name="hex"/>
+        <button class="btn" type="submit">Log in</button>
+    </form>
+    {% endif %}
+    {% if msg %}
+    <p>{{msg}}</p>
+    {% endif %}
+</div>
+<div id="bg"></div>
+
+
+<!-- partial -->
+  
+</body>
+</html>

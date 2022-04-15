@@ -1,0 +1,28 @@
+body{
+    background-image: url('img/VCmZ4P.webp');
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#digest {
+    font-family:Courier; 
+    color:White; 
+    font-size: 15px;
+}
+
+form .form-field::before {
+    font-size: 20px;
+    position: absolute;
+    left: 15px;
+    top: 17px;
+    color: #888888;
+    content: " ";
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
