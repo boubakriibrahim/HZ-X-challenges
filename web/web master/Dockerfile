@@ -8,9 +8,6 @@ RUN pip3 install -r requirements.txt
 
 COPY ./challenge /app/
 
-RUN sudo apt install iputils-ping
-
-RUN sudo apt install netcat
 
 CMD ["gunicorn", "-w", "2", "-b", "0.0.0.0:5000", \
     "--access-logfile", "-", \
